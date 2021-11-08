@@ -15,5 +15,16 @@ switcher.addEventListener('click', function() {
     }
     console.log('current class name: ' + className);
 
+
+
 });
+
+const songSwitcher = document.querySelector('.changeSongBtn');
+
+songSwitcher.addEventListener('click', function() {
+    document.body.iframe.srcList.toggle('https://open.spotify.com/embed/track/3KENEwjmiRoWoW3HTE9JNb?utm_source=generator')
+});
+
+
+
 
