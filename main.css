@@ -17,6 +17,33 @@ li {
   list-style: circle;
 }
 
+
+.nav-bar-list{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+.nav-bar-list-element{
+  display: inline;
+  float: left;
+}
+
+.nav-bar-list-element-link{
+  display: block;
+  padding: 14px 16px;
+  color: white;
+  /*background-color: #dddddd;*/
+  width:120px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.nav-bar-list-element-link:hover{
+  background-color:#111;
+}
+
 .list {
   list-style: square;
 }
@@ -37,8 +64,8 @@ li {
   }
   .btn {
     position: absolute;
-    top: 20px;
-    left: 250px;
+    top: 100px;
+    left: 400px;
     height: 50px;
     width: 50px;
     border-radius: 50%;
