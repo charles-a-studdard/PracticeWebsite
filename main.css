@@ -17,7 +17,7 @@ li {
   list-style: circle;
 }
 
-
+/****************Navigation Bar****************/
 .nav-bar-list{
   list-style-type: none;
   margin: 0;
@@ -35,7 +35,7 @@ li {
   padding: 14px 16px;
   color: white;
   /*background-color: #dddddd;*/
-  width:120px;
+  width:150px;
   text-align: center;
   text-decoration: none;
 }
@@ -43,6 +43,8 @@ li {
 .nav-bar-list-element-link:hover{
   background-color:#111;
 }
+/**********************************************/
+
 
 .list {
   list-style: square;
