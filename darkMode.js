@@ -1,7 +1,7 @@
+
 'use strict';
 
 const switcher = document.querySelector('.btn');
-var i = 1;
 
 switcher.addEventListener('click', function() {
     document.body.classList.toggle('dark-theme')
@@ -17,17 +17,3 @@ switcher.addEventListener('click', function() {
     console.log('current class name: ' + className);
 
 });
-
-const songSwitcher = document.querySelector('.changeSongBtn');
-
-songSwitcher.addEventListener('click', function() {
-    var srcs = ["https://open.spotify.com/embed/track/3KENEwjmiRoWoW3HTE9JNb?utm_source=generator","https://open.spotify.com/embed/track/1NaDK3atogQEn9glK5fYuy?utm_source=generator"]
-    
-    document.getElementById("currentSong").src = srcs[i%2];
-    i++;
-    console.log('switched');
-});
-
-
-
-
