@@ -15,7 +15,13 @@
 }
 body {
     background: var(--bg);
+    position: relative;
+
 }
+#content-wrap{ /*neccesary to keep footer at bottom*/
+  padding-bottom: 170px;
+}
+
 ul{
     font-family: helvetica;
 }
@@ -30,6 +36,10 @@ h3{
   font-size: 32px;
   margin-top: 20px;
   margin-bottom: 10px;
+}
+
+.list {
+  list-style: square;
 }
 
 /****************Navigation Bar****************/
@@ -62,16 +72,18 @@ h3{
 
 /*footer*/
 
-footer{
+footer{  /*Stetches to fit bottom of screen*/
   background-color: var(--darker);
   border-radius: 10px;
   padding: 10px;
   padding-right:30px;
   padding-left:0px;
-  position: absolute;
   left:0;
   right:0;
   bottom:0;
+  height:140px;
+  position: absolute;
+
 }
 
 .footer-col-left{
@@ -101,10 +113,7 @@ footer{
 
 /********/
 
-.list {
-  list-style: square;
-}
-
+/****Color Switching****/
 .light-theme {
   --bg: var(--light);
   --fontColor: var(--dark);
@@ -118,7 +127,10 @@ footer{
   --btnBg: var(--light);
   --btnFontColor: var(--dark);
 }
+/***********************/
 
+
+/****Buttons****/
 .btn {
   position: absolute;
   top: 100px;
@@ -132,7 +144,9 @@ footer{
 }
 
 .btn:focus { outline-style: none; }
-  
+/***************/
+
+/****Container Stuff****/
 .container {
   width: 100%;
   padding-right: 15px;
@@ -153,3 +167,4 @@ footer{
   margin-right: -15px;
   margin-left: -15px;
 }
+/***********************/
