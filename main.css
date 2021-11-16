@@ -14,9 +14,13 @@
   font-family: helvetica;
 }
 body {
-    background: var(--bg);
-    position: relative;
+  
+  background: var(--bg);
+  position: relative;
 
+}
+main{
+  padding-top:70px;
 }
 #content-wrap{ /*neccesary to keep footer at bottom*/
   padding-bottom: 170px;
@@ -43,30 +47,41 @@ h3{
 }
 
 /****************Navigation Bar****************/
-.nav-bar-list{
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
+
+header{  
   background-color: var(--lighter);
-}
-.nav-bar-list-element{
-  display: inline;
-  float: left;
+  border-radius: 10px;
+  padding: 10px;
+  padding-right:30px;
+  padding-left:0px;
+  left:0;
+  right:0;
+  position: absolute;
 }
 
-.nav-bar-list-element-link{
+.header-col{
+  background-color: var(--lightest);
+  text-align: center;
+  margin-right:10px;
+  margin-left:10px;
+  border-radius: 10px;
+}
+
+.nav-bar-link{
   display: block;
   padding: 14px 16px;
-  color: var(--lightest);
-  width:150px;
+  color: var(--light);
   text-align: center;
   text-decoration: none;
+  border-radius: 10px;
 }
 
-.nav-bar-list-element-link:hover{
-  background-color:var(--light);
+.nav-bar-link:hover{
+  background-color:var(--lighter);
 }
+
+
+
 /**********************************************/
 
 
